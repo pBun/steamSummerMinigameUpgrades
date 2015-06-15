@@ -27,6 +27,7 @@ var initAutoUpgrade = window.setInterval(function() {
 }, 1000);
 
 function initializeAutoUpgrade() {
+  /* MEISHUU'S SCRIPT */
   var upgradeManagerPrefilter;
   if (!upgradeManagerPrefilter) {
     // add prefilter on first run
@@ -465,4 +466,6 @@ function initializeAutoUpgrade() {
 
   if (upgradeManagerTimer) window.clearTimeout(upgradeManagerTimer);
   var upgradeManagerTimer = window.setInterval(upgradeManager, 5000);
+  
+  /* END MEISHUU'S SCRIPT */
 };
